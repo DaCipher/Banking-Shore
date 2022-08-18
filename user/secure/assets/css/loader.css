@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,800,200);
+#loader {
+    background: none repeat scroll 0 0 rgb(255, 255, 255);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+#loader-container {
+    width: 200px;
+    height: 200px;
+    color: white;
+    margin: 0 auto;
+    position: absolute;
+    background-color: #f6b024;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid rgba(5, 87, 158, 0.9);
+    border-radius: 50%;
+    -webkit-animation: borderScale 1s infinite ease-in-out;
+    animation: borderScale 1s infinite ease-in-out;
+}
+
+#loadingText {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+@-webkit-keyframes borderScale {
+    0% {
+        border: 5px solid rgba(6, 98, 178, 0.9);
+    }
+    50% {
+        border: 25px solid rgba(5, 87, 158, 0.9);
+    }
+    100% {
+        border: 5px solid rgba(6, 98, 178, 0.9);
+    }
+}
+
+@keyframes borderScale {
+    0% {
+        border: 5px solid rgba(6, 98, 178, 0.9);
+    }
+    50% {
+        border: 25px solid rgba(5, 87, 158, 0.9);
+    }
+    100% {
+        border: 5px solid rgba(6, 98, 178, 0.9);
+    }
+}
+
+.background-primary {
+    background-color: rgba(5, 87, 158, 0.9);
+}
+
+.btn.background-primary:hover {
+    background-color: rgba(12, 116, 207, 0.904);
+}
+
+.color-primaary {
+    color: rgba(5, 87, 158, 0.9)
+}
